@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub&family=Poppins&display=swap");
+.Logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins',sans-serif;
+  color: #2E42EB;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 51.33px;
+}
+
+.Logo .img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.Navbar {
+  background: #ECF0F4;
+  height: 5rem;
+  width: 100%;
+  font-family: 'Krub', sans-serif;
+  font-size: 14px;
+  line-height: 18.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Navbar .Navbar-items {
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Navbar .BadgeOverlap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar .BadgeOverlap .mid {
+  margin: 0 1rem !important;
+  cursor: pointer;
+}
+
+.Navbar .BadgeOverlap .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.Dashboard {
+  background-color: white;
+  border-radius: 10px 10px 5px 5px;
+}
+
+.Sidemenu {
+  background-color: #fff;
+  border-radius: 10px 10px 5px 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+body .App {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .App .layout {
+  width: 90%;
+  height: 100vh;
+  margin: 5rem 5rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+}
+/*# sourceMappingURL=App.css.map */

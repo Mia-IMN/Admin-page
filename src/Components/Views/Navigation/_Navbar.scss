@@ -1,0 +1,29 @@
+.Navbar{
+    background: #ECF0F4;
+    height: 5rem;
+    width: 100%;
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    line-height: 18.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Navbar-items{
+        width: 92%;
+        display: flex;
+        justify-content: space-between; 
+    }
+    .BadgeOverlap{
+        display: flex;
+        align-items: center;
+        .mid{
+            margin:0 1rem !important;
+            cursor: pointer;
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}

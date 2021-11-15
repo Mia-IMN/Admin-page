@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub&family=Poppins&display=swap");
+
+@import "./Components/Global/Logo";
+@import "./Components/Views/Navigation/Navbar";
+@import './Components/Views/DashboardOverview/DashboardOverview';
+@import './Components/Views/SideMenu/Sidemenu';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
+  .App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // overflow: hidden;
+    .layout {
+      // background-color: white;
+      width: 90%;
+      height: 100vh;
+      margin: 5rem 5rem 0;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+    }
+  }
+}
