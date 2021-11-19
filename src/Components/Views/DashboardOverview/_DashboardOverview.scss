@@ -1,4 +1,8 @@
-.Dashboard{
+.DashboardOverview{
     background-color: white;
     border-radius: 10px 10px 5px 5px;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

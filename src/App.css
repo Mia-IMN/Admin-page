@@ -60,7 +60,7 @@
 }
 
 .Navbar .BadgeOverlap .mid {
-  margin: 0 1rem !important;
+  margin-left: 1rem !important;
   cursor: pointer;
 }
 
@@ -74,14 +74,437 @@
   cursor: pointer;
 }
 
-.Dashboard {
+.DashboardOverview {
   background-color: white;
   border-radius: 10px 10px 5px 5px;
+  padding: 3rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Sidemenu {
   background-color: #fff;
   border-radius: 10px 10px 5px 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.Sidemenu .card-list {
+  width: 100%;
+  height: 80%;
+  background-color: #f7f7f7;
+  margin-top: 1rem;
+}
+
+.Sidemenu .avatar {
+  position: relative;
+  top: -1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.Sidemenu .avatar .head {
+  font-size: 17px;
+  font-weight: 700;
+  color: #707070;
+  line-height: 20px;
+  margin-top: .3rem;
+}
+
+.Littlecards {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  margin: 0.4rem 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Littlecards .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+  color: black;
+  font-size: 15px;
+}
+
+.Littlecards .contents .Icon {
+  margin-right: 1rem;
+}
+
+.Littlecards .contents2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Littlecards .mybadge {
+  width: 32px;
+  height: 13px;
+  background-color: #707070;
+  border-radius: 15px;
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Littlecards .Notice {
+  font-size: 12px;
+  color: white;
+}
+
+.active {
+  background: #0077b5;
+}
+
+.active .contents {
+  color: white;
+}
+
+.cards {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem 2.5rem;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.card {
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  color: white;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .icon {
+  background-color: #fff;
+  width: 51px;
+  height: 56px;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.card .h2 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.card .p {
+  font-size: 13px;
+}
+
+.new-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 450px;
+  margin-top: 4rem;
+}
+
+.new-profile .label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.new-profile .inp {
+  border: 1px solid #d1d3d4;
+  height: 45px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1rem;
+  font-size: 15px;
+}
+
+.new-profile .inp::-webkit-input-placeholder {
+  font-size: 15px;
+  color: black;
+}
+
+.new-profile .inp:-ms-input-placeholder {
+  font-size: 15px;
+  color: black;
+}
+
+.new-profile .inp::-ms-input-placeholder {
+  font-size: 15px;
+  color: black;
+}
+
+.new-profile .inp::placeholder {
+  font-size: 15px;
+  color: black;
+}
+
+.new-profile .inp:focus {
+  outline: none;
+}
+
+.new-profile .new-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.new-profile .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+}
+
+.new-profile .new-avatar {
+  width: 70px;
+  height: 70px;
+  background-color: #dadada;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.new-profile .input {
+  font-size: 15px;
+}
+
+.new-profile .removePhoto {
+  margin-top: 1rem;
+}
+
+.new-profile .Rem {
+  margin-left: .5rem;
+}
+
+.new-profile .update-button {
+  margin-top: 3rem;
+  color: #f3f3f4;
+  background-color: #243665;
+  border-radius: 5px;
+  width: 25%;
+  height: 45px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.new-profile .update-button:hover {
+  background-color: rgba(36, 54, 101, 0.7);
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.table {
+  text-align: left;
+}
+
+.table .S {
+  width: 2rem;
+}
+
+.table .N {
+  width: 10rem;
+}
+
+.table .P {
+  width: 8rem;
+}
+
+.table .E {
+  width: 11rem;
+}
+
+.table .A {
+  width: 10rem;
+  padding-left: .5rem;
+}
+
+.table .D {
+  width: 5rem;
+  padding-left: .5rem;
+}
+
+.table .T {
+  width: 5rem;
+  padding-left: .5rem;
+}
+
+.Popup {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  width: 196px;
+  height: 122px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 5px 10px rgba(1, 1, 1, 0.1);
+          box-shadow: 0px 5px 10px rgba(1, 1, 1, 0.1);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Popup .p {
+  font-family: 'Krub',sans-serif;
+  font-size: 14px;
+  width: 83%;
+  height: 50px;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Popup .p:hover {
+  background-color: #f1f0f0;
+}
+
+.border {
+  width: 881px;
+  height: 141px;
+  border: 1px solid #d1d3d4;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.titl {
+  height: 45px;
+  width: 880px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #d1d3d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titl .titl-h3 {
+  padding-left: 2rem;
+  font-size: 15px;
 }
 
 * {
@@ -110,16 +533,58 @@ body .App {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+body .App .username {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-top: 1rem;
+  color: #243665;
+  font-size: 20px;
 }
 
 body .App .layout {
   width: 90%;
   height: 100vh;
-  margin: 5rem 5rem 0;
+  margin: 3rem 5rem 3rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
       grid-template-columns: 1fr 3fr;
   gap: 2rem;
+}
+
+body .App .title {
+  color: #534584;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+body .App .little-title {
+  color: #534584;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+body .App .Large-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding: 1rem 1.5rem;
 }
 /*# sourceMappingURL=App.css.map */

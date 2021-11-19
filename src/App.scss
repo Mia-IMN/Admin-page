@@ -2,10 +2,17 @@
 
 @import "./Components/Global/Logo";
 @import "./Components/Views/Navigation/Navbar";
-@import './Components/Views/DashboardOverview/DashboardOverview';
-@import './Components/Views/SideMenu/Sidemenu';
+@import "./Components/Views/DashboardOverview/DashboardOverview";
+@import "./Components/Views/SideMenu/Sidemenu";
+@import "./Components/Views/SideMenu/Littlecards";
+@import "./Components/Views/DashBoard/DashBoard";
+@import "./Components/Views/DashBoard/DashBoardCards";
+@import "./Components/Views/Profile/Prof";
+@import "./Components/Global/table";
+@import "./Components/Views/Navigation/Popup";
+@import "./Components/Views/AddProperty/AdProperty";
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -19,15 +26,43 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    .username {
+      width: 90%;
+      display: flex;
+      justify-content: right;
+      margin-top: 1rem;
+      color: #243665;
+      font-size: 20px;
+    }
     .layout {
-      // background-color: white;
       width: 90%;
       height: 100vh;
-      margin: 5rem 5rem 0;
+      margin: 3rem 5rem 3rem;
       display: grid;
       grid-template-columns: 1fr 3fr;
       gap: 2rem;
+    }
+    // Global Styles
+    .title {
+      color: #534584;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .little-title {
+      color: #534584;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .Large-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      height: fit-content;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+      padding: 1rem 1.5rem;
     }
   }
 }
